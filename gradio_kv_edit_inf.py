@@ -4,6 +4,20 @@ import time
 from dataclasses import dataclass
 from glob import iglob
 import argparse
+
+
+# 修复 Gradio 已知 bug：ImageEditor 等组件的 JSON schema 中 additionalProperties 可能为 bool，
+# 导致 gradio_client.utils.get_type(schema) 里 "const" in schema 报 TypeError
+# 必须在 import gradio 之前 patch，否则无效
+import gradio_client.utils as _gc_utils
+_get_type_orig = _gc_utils.get_type
+def _get_type_patched(schema):
+    if isinstance(schema, bool):
+        return "boolean"
+    return _get_type_orig(schema)
+_gc_utils.get_type = _get_type_patched
+
+
 from einops import rearrange
 from PIL import ExifTags, Image
 import torch
@@ -265,4 +279,14 @@ if __name__ == "__main__":
 
     demo = create_demo(args.name)
     
-    demo.launch(server_name='0.0.0.0', share=args.share, server_port=args.port)
+     #demo.launch(server_name='0.0.0.0', share=args.share, server_port=args.port)
+    #demo.launch(server_name='0.0.0.0', share=True, server_port=args.port)
+    # show_api=False 避免触发 Gradio 已知 bug：ImageEditor 等组件的 schema 含 bool 时
+    # get_type(schema) 会执行 "const" in schema，若 schema 为 True/False 则报 TypeError
+    # 见 https://github.com/gradio-app/gradio/issues/11722
+    demo.launch(
+        server_name='0.0.0.0',
+        share=args.share,
+        server_port=args.port,
+        show_api=False,
+    )

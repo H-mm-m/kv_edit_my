@@ -1,0 +1,296 @@
+#### IMAGENET-R #######
+  - 
+    init_img:  /ImageNetR-TI2I/penguin/sketch_8.jpg
+
+    target_prompts:
+    - a video-game of a penguin
+    - a pattern of a penguin
+    - a toy of a penguin
+    - a sculpture of a swan
+    - a photo of a hummingbird
+ 
+
+  - 
+    init_img:  /ImageNetR-TI2I/penguin/art_5.jpg
+
+    target_prompts:
+    - an embroidery of a penguin
+    - a video-game of a penguin
+    - a tattoo of a penguin
+    - a photo of a bustard
+    - a pattern of a crane
+ 
+  - 
+    init_img:  /ImageNetR-TI2I/penguin/painting_6.jpg
+    source_prompt: a painting of a penguin
+ 
+    target_prompts:
+    - a toy of a penguin
+    - a sculpture of a penguin
+    - a tattoo of a penguin
+    - a video-game of a egret
+    - a graffiti of a crane
+ 
+  -
+    init_img:  /ImageNetR-TI2I/husky/sketch_20.jpg
+ 
+    target_prompts:
+    - a pattern of a husky
+    - a tattoo of a husky
+    - a toy of a husky
+    - a graffiti of a poodle
+    - an embroidery of a cat
+ 
+  -
+    init_img:  /ImageNetR-TI2I/husky/art_5.jpg
+ 
+    target_prompts:
+    - a sculpture of a husky
+    - a pattern of a husky
+    - a graffiti of a husky
+    - a video-game of a bear
+    - an origami of a tiger
+ 
+  -
+    init_img:  /ImageNetR-TI2I/husky/toy_1.jpg
+ 
+    target_prompts:
+    - a pattern of a husky
+    - a painting of a husky
+    - a sculpture of a husky
+    - a photo of a tiger
+    - an embroidery of a beagle
+ 
+  -
+    init_img:  /ImageNetR-TI2I/goldfish/cartoon_25.jpg
+ 
+    target_prompts:
+    - a graffiti of a goldfish
+    - an origami of a goldfish
+    - a photo of a goldfish
+    - a tattoo of a parrotfish
+    - an embroidery of a tuna
+ 
+  -
+    init_img:  /ImageNetR-TI2I/goldfish/origami_1.jpg
+ 
+    target_prompts:
+    - an image of a goldfish
+    - a tattoo of a goldfish
+    - a painting of a goldfish
+    - a graphic of a eel
+    - a video-game of a tuna
+ 
+  -
+    init_img:  /ImageNetR-TI2I/goldfish/painting_27.jpg
+ 
+    target_prompts:
+    - an embroidery of a goldfish
+    - an image of a goldfish
+    - a tattoo of a goldfish
+    - a toy of a tuna
+    - a video-game of a shark
+ 
+  -
+    init_img:  /ImageNetR-TI2I/cat/sketch_20.jpg
+ 
+    target_prompts:
+    - a toy of a cat
+    - an image of a cat
+    - a sculpture of a cat
+    - a tattoo of a lion
+    - an origami of a bear
+ 
+  -
+    init_img:  /ImageNetR-TI2I/cat/sculpture_5.jpg
+ 
+    target_prompts:
+    - a pattern of a cat
+    - a graffiti of a cat
+    - a toy of a cat
+    - an origami of a poodle
+    - an embroidery of a bear
+ 
+  -
+    init_img:  /ImageNetR-TI2I/cat/cartoon_0.jpg
+ 
+    target_prompts:
+    - a sculpture of a cat
+    - a graffiti of a cat
+    - an embroidery of a cat
+    - an image of a bear
+    - an origami of a dog
+ 
+  -
+    init_img:  /ImageNetR-TI2I/jeep/sculpture_0.jpg
+ 
+    target_prompts:
+    - a graffiti of a jeep
+    - an image of a jeep
+    - a tattoo of a jeep
+    - a cartoon of a pickup
+    - a deviantart of a tractor
+ 
+  -
+    init_img:  /ImageNetR-TI2I/jeep/painting_2.jpg
+
+    target_prompts:
+    - a graffiti of a jeep
+    - a photo of a jeep
+    - a tattoo of a jeep
+    - a pattern of a tractor
+    - a sculpture of a ambulance
+ 
+  -
+    init_img:  /ImageNetR-TI2I/jeep/toy_18.jpg
+
+    target_prompts:
+    - a pattern of a jeep
+    - a cartoon of a jeep
+    - a tattoo of a jeep
+    - an embroidery of a minivan
+    - a sculpture of a ambulance
+ 
+  -
+    init_img:  /ImageNetR-TI2I/castle/cartoon_17.jpg
+
+    target_prompts:
+    - an image of a castle
+    - a sculpture of a castle
+    - a tattoo of a castle
+    - an embroidery of a temple
+    - a photo of a church
+ 
+  -
+    init_img:  /ImageNetR-TI2I/castle/sculpture_2.jpg
+
+    target_prompts:
+    - a graffiti of a castle
+    - a painting of a castle
+    - a tattoo of a castle
+    - a deviantart of a church
+    - a graphic of a pagoda
+ 
+  -
+    init_img:  /ImageNetR-TI2I/castle/embroidery_2.jpg
+ 
+    target_prompts:
+    - a pattern of a castle
+    - a deviantart of a castle
+    - a photo of a castle
+    - a sculpture of a pagoda
+    - an art of a shrine
+ 
+  -
+    init_img:  /ImageNetR-TI2I/pizza/sculpture_3.jpg
+
+    target_prompts:
+    - a tattoo of a pizza
+    - a cartoon of a pizza
+    - a graffiti of a pizza
+    - an image of a baloon
+    - an embroidery of a cake
+ 
+  -
+    init_img:  /ImageNetR-TI2I/pizza/toy_1.jpg
+
+    target_prompts:
+    - a graffiti of a pizza
+    - an art of a pizza
+    - a sketch of a pizza
+    - a video-game of a cookie
+    - a sketch of a pancake
+ 
+  -
+    init_img:  /ImageNetR-TI2I/pizza/sketch_5.jpg
+
+    target_prompts:
+    - an origami of a pizza
+    - an embroidery of a pizza
+    - an image of a pizza
+    - a tattoo of a cake
+    - a pattern of a pancake
+ 
+  -
+    init_img:  /ImageNetR-TI2I/violin/painting_16.jpg
+
+    target_prompts:
+    - a video-game of a violin
+    - a sculpture of a violin
+    - a toy of a violin
+    - an embroidery of a viola
+    - a pattern of a cello
+ 
+  -
+    init_img:  /ImageNetR-TI2I/violin/painting_27.jpg
+
+    target_prompts:
+    - a toy of a violin
+    - a graffiti of a violin
+    - an image of a violin
+    - a video-game of a guitar
+    - an origami of a cello
+ 
+  -
+    init_img:  /ImageNetR-TI2I/violin/origami_0.jpg
+
+    target_prompts:
+    - a photo of a violin
+    - an image of a violin
+    - an art of a violin
+    - a pattern of a banjo
+    - a toy of a cello
+ 
+  -
+    init_img:  /ImageNetR-TI2I/panda/sculpture_29.jpg
+
+    target_prompts:
+    - a graffiti of a panda
+    - a sketch of a panda
+    - an origami of a panda
+    - an art of a bobcat
+    - a cartoon of a tiger
+ 
+  -
+    init_img:  /ImageNetR-TI2I/panda/sketch_36.jpg
+
+    target_prompts:
+    - a video-game of a panda
+    - a pattern of a panda
+    - a tattoo of a panda
+    - an origami of a leopard
+    - a sculpture of a dog
+ 
+  -
+    init_img:  /ImageNetR-TI2I/hummingbird/embroidery_11.jpg
+ 
+    target_prompts:
+    - an art of a hummingbird
+    - a video-game of a hummingbird
+    - a toy of a hummingbird
+    - a deviantart of a pigeon
+    - a graffiti of a egret
+ 
+  -
+    init_img:  /ImageNetR-TI2I/hummingbird/cartoon_9.jpg
+
+    target_prompts:
+    - a pattern of a hummingbird
+    - a tattoo of a hummingbird
+    - an image of a hummingbird
+    - an embroidery of a bustard
+    - an origami of a crane
+ 
+  -
+    init_img:  /ImageNetR-TI2I/hummingbird/origami_2.jpg
+
+    target_prompts:
+    - a sculpture of a hummingbird
+    - an image of a hummingbird
+    - a pattern of a hummingbird
+    - a deviantart of a egret
+    - a sketch of a parrot
+ 
+
+#################### END IMAGENET R ###################
+

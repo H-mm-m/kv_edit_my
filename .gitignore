@@ -1,6 +1,6 @@
 script/
 *.symlink
-output/
+#output/
 regress_result/
 google
 checkpoints

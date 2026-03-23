@@ -1,0 +1,181 @@
+####### man karate
+- init_img: "data/translation/benchmark/real_karate.jpeg"
+  target_prompts:
+    - "a photo of a pixar superhero in NYC"
+    - "a photo of a silver robot in the snow"
+    - "a photo of a bronze sculpture in a museum"
+
+##### white horse
+- init_img: "data/translation/benchmark/horse.png"
+  target_prompts:
+    - "a photo of a bronze horse in a museum"
+    - "a photo of a pink horse in the beach"
+    - "a photo of a robot horse"
+
+##### man in meditation pose
+- init_img: "data/translation/benchmark/meditation.png"
+  target_prompts:
+    - "a photo of a silver robot"
+    - "a photo of a golden statue in a temple"
+    - "a photo of a wooden statue"
+
+##### spiderman
+- init_img: "data/translation/benchmark/spiderman.png"
+  target_prompts:
+    - "a photo of a golden robot"
+    - "a photo of a wooden statue"
+    - "a photo of a sand sculpture"
+
+###### stones
+- init_img: "data/translation/benchmark/stones.jpg"
+  target_prompts:
+    - "a photo of a white wedding cake"
+    - "a photo of a skyscraper"
+    - "a photo of a tower in snow"
+
+##### Bear doll
+- init_img: "data/translation/benchmark/bear_doll.jpg"
+  target_prompts:
+    - "a photo of a silver robot walking on the moon"
+    - "an image of Winnie the Pooh"
+    - "a photo of a bear cub wearing a red t-shirt"
+
+##### Pisa
+- init_img: "data/translation/benchmark/real_pisa.png"
+  target_prompts:
+    - "a photo of a wedding cake"
+    - "a photo of the Eiffel tower"
+    - "a photo of a tree"
+
+##### mountain lake
+- init_img: "data/translation/benchmark/mountain_trees_lake.jpg"
+  target_prompts:
+    - "a photo of a snowy mountain above an ice field"
+    - "a photo of a volcano above lava"
+    - "a photo of a pyramid in desert"
+
+##### couples dancing
+- init_img: "data/translation/benchmark/dancing.jpeg"
+  target_prompts:
+    - "a photo of robots dancing"
+    - "a cartoon of a couple dancing"
+    - "a photo of a wooden sculpture of a couple dancing"
+
+##### bear
+- init_img: "data/translation/benchmark/bear.jpeg"
+  target_prompts:
+    - "an image of Paddington the bear"
+    - "an image of Kung Fu Panda"
+    - "an image of Winnie the Pooh"
+
+##### mouse cartoon
+- init_img: "data/translation/benchmark/mouse_cartoon.jpeg"
+  target_prompts:
+    - "a photorealistic image of a dog sitting on grass"
+    - "a photorealistic image of a cat sitting on snow"
+    - "a photo of a red robot"
+
+##### bird painting
+- init_img: "data/translation/benchmark/bird_painting.jpg"
+  target_prompts:
+    - "a photo of a hummingbird in a forest"
+    - "a photo of an eagle in the sky"
+    - "a photo of a sparrow"
+
+#### panda painting
+- init_img: "data/translation/benchmark/panda_painting.jpg"
+  target_prompts:
+    - "a photorealistic image of a panda"
+    - "a photorealistic image of a grizzly bear"
+    - "a photo of a flurry plush panda toy"
+    - "a photorealistic image of a polar bear in the desert"
+
+#### horse painting
+- init_img: "data/translation/benchmark/horse_painting.jpg"
+  target_prompts:
+    - "a photorealistic image of a horse"
+    - "a photorealistic image of a zebra"
+    - "a photorealistic image of a wooden horse"
+
+#### polygonal mountain
+- init_img: "data/translation/benchmark/polygon_mountain.jpeg"
+  target_prompts:
+    - "a photorealistic image of a snowy mountain"
+    - "a photorealistic image of a mountain full of trees"
+    - "an oil painting of a mountain near a lake"
+
+### painting of bunny and cat
+- init_img: "data/translation/benchmark/cat_bunny_painting.jpeg"
+  target_prompts:
+    - "a photorealistic image of a cat and a bunny"
+    - "a photorealistic image of bear cubs in the snow"
+    - "a polygonal illustration of a cat and a bunny"
+
+#### landscape illustration
+- init_img: "data/translation/benchmark/landscape_illustration.png"
+  target_prompts:
+    - "a photorealistic image of a snowy mountain"
+    - "a photorealistic image of a mountain full of trees"
+    - "a polygonal illustration of a mountain"
+
+#### dog face
+- init_img: "data/translation/benchmark/dog_face.png"
+  target_prompts:
+    - "a photo of a dalmatian dog"
+    - "a photo of a polar bear"
+    - "a photo of a black panther"
+    - "an embroidery of a dog"
+
+#### bear face sketch
+- init_img: "data/translation/benchmark/bear_sketch.jpeg"
+  target_prompts:
+    - "a photorealistic image of a crochet bear"
+    - "a photorealistic image of a grizzly bear"
+    - "a photorealistic image of a wooden bear"
+
+### bird branch sil
+- init_img: "data/translation/benchmark/bird_branch_sil.png"
+  target_prompts:
+    - "a photo of a hummingbird in a forest"
+    - "a photo of an eagle"
+    - "a photo of a sparrow"
+
+#### car silhouette
+- init_img: "data/translation/benchmark/car_sil.png"
+  target_prompts:
+    - "a photorealistic image of a red car in NYC"
+    - "a photorealistic image of a wooden car on the grass"
+    - "a photorealistic image of a golden car in the museum"
+
+#### bird lake silhouette
+- init_img: "data/translation/benchmark/bird_lake_sil.jpeg"
+  target_prompts:
+    - "a photorealistic image of a bird near a lake during sunset"
+    - "a photorealistic image of a bird near a lake at night"
+    - "a photorealistic image of a pavo near a lake"
+
+#### deer and birds silhouette
+- init_img: "data/translation/benchmark/animals_sil.jpeg"
+  target_prompts:
+    - "a photorealistic image of deer and birds near a lake and a tree"
+
+#### airplane silhouette
+- init_img: "data/translation/benchmark/airplane_sil.png"
+  target_prompts:
+    - "a photorealistic image of a white airplane in the sky"
+    - "a photorealistic image of a golden airplane in the museum"
+    - "a photorealistic image of an airplane toy"
+
+#### kickboxers silhouette
+- init_img: "data/translation/benchmark/kickboxing_sil.png"
+  target_prompts:
+    - "a photorealistic image of two robots kickboxing"
+    - "a photorealistic image of a wooden sculpture"
+    - "a photorealistic image of an ice sculpture"
+
+#### minimalist mountains
+- init_img: "data/translation/benchmark/mountains_minimal.jpeg"
+  target_prompts:
+    - "a photorealistic image of mountains during sunset"
+    - "a photorealistic image of an ocean during sunset"
+    - "a photorealistic image of a desert during sunset"

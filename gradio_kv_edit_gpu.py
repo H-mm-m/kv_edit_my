@@ -4,6 +4,19 @@ import time
 from dataclasses import dataclass
 from glob import iglob
 import argparse
+
+# 修复 Gradio 已知 bug：ImageEditor 等组件的 JSON schema 中 additionalProperties 可能为 bool，
+# 导致 gradio_client.utils.get_type(schema) 里 "const" in schema 报 TypeError
+# 必须在 import gradio 之前 patch，否则无效
+import gradio_client.utils as _gc_utils
+_get_type_orig = _gc_utils.get_type
+def _get_type_patched(schema):
+    if isinstance(schema, bool):
+        return "boolean"
+    return _get_type_orig(schema)
+_gc_utils.get_type = _get_type_patched
+
+
 from einops import rearrange
 from PIL import ExifTags, Image
 import torch
@@ -29,7 +42,7 @@ class SamplingOptions:
     attn_mask: bool = False
     attn_scale: float = 1.0
 
-def resize_image(image_array, max_width=1360, max_height=768):
+def resize_image(image_array, max_width=1366, max_height=768):
     # 将numpy数组转换为PIL图像
     if image_array.shape[-1] == 4:
         mode = 'RGBA'
@@ -110,7 +123,9 @@ class FluxEditor_kv_demo:
         
         rgba_init_image = brush_canvas["background"]
         init_image = rgba_init_image[:,:,:3]
-        # init_image = resize_image(init_image)
+        
+        #  init_image = resize_image(init_image)
+        init_image = resize_image(init_image)
         shape = init_image.shape        
         height = shape[0] if shape[0] % 16 == 0 else shape[0] - shape[0] % 16
         width = shape[1] if shape[1] % 16 == 0 else shape[1] - shape[1] % 16
@@ -370,4 +385,14 @@ if __name__ == "__main__":
 
     demo = create_demo(args.name)
     
-    demo.launch(server_name='0.0.0.0', share=args.share, server_port=args.port)
+    #demo.launch(server_name='0.0.0.0', share=args.share, server_port=args.port)
+    #demo.launch(server_name='0.0.0.0', share=True, server_port=args.port)
+    # show_api=False 避免触发 Gradio 已知 bug：ImageEditor 等组件的 schema 含 bool 时
+    # get_type(schema) 会执行 "const" in schema，若 schema 为 True/False 则报 TypeError
+    # 见 https://github.com/gradio-app/gradio/issues/11722
+    demo.launch(
+        server_name='0.0.0.0',
+        share=args.share,
+        server_port=args.port,
+        show_api=False,
+    )
